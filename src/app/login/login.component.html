@@ -1,0 +1,29 @@
+<div class="login-container">
+  <div class="login-box">
+    <div class="logo">
+      <!-- <img [src]="imagepath" alt="Logo"> -->
+    </div>
+    <h2>Welcome to <span class="brand">LOREM</span></h2>
+    <h1>Login In</h1>
+
+    <form>
+      <div class="input-group">
+        <input type="text" name="EmailId" [(ngModel)]="loginObj.EmailId" placeholder="Username or email address"
+          required required minlength="6">
+        <!-- <span class="error-message">Password must be at least 6 characters long.</span> -->
+      </div>
+
+      <div class="input-group">
+        <input type="password" name="Password" [(ngModel)]="loginObj.Password" id="password" placeholder="Password"
+          required />
+        <a href="#" class="forgot-password">Forgot Password</a>
+      </div>
+
+      <button type="submit" (click)="onLogin()" class="sign-in-btn">Login In</button>
+    </form>
+
+    <p class="sign-up-link">
+      No Account? <a href="#">Sign up</a>
+    </p>
+  </div>
+</div>
