@@ -37,17 +37,17 @@ export class LoginComponent {
 
       }
       onLogin(){
-        console.log("calling");
+        // console.log("calling");
 
         debugger;
         this.http.post("http://localhost:4000/api/v1/login/clublogin" ,this.loginObj).subscribe((res : any)=>{
           debugger;
-          console.log("start");
+          // console.log("start");
 
           if(res.result){
             alert("login success");
             console.log("hii");
-            this.router.navigateByUrl("dashboard")
+            this.router.navigateByUrl("dashboard")  
           }
           else{
             alert("Check User name or password")
