@@ -40,7 +40,7 @@ export class LoginComponent {
         console.log("calling");
 
         debugger;
-        this.http.post("https://freeapi.miniprojectideas.com/api/User/Login" ,this.loginObj).subscribe((res : any)=>{
+        this.http.post("http://localhost:4000/api/v1/login/clublogin" ,this.loginObj).subscribe((res : any)=>{
           debugger;
           console.log("start");
 
